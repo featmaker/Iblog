@@ -1,27 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <Button type="primary">Primary</Button>
+    <transition>
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
 <script>
-import 'iview/dist/styles/iview.css';
-import HelloWorld from './components/HelloWorld.vue'
-import { Button } from 'iview'
+import 'reset-css/reset.css'
+import 'iview/dist/styles/iview.css'
 
 export default {
   name: 'app',
-  components: {
-    HelloWorld,
-    Button,
-  }
 }
 </script>
 
 <style>
-
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -29,6 +23,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
+
 </style>
