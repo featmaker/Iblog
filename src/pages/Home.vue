@@ -2,7 +2,7 @@
   <div>
       <Layout>
         <template slot="body">
-          content body
+          主要内容展示区
         </template>
       </Layout>
   </div>

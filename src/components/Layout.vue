@@ -4,14 +4,15 @@
       <Header>
         <Iheader />
       </Header>
-      <Layout>
-        <Sider>
+      <Layout class="layout-container">
+        <Sider class="layout-sider">
           <slot name="sider">
-            <Card>ddd</Card>
+            <Card>右边栏 card</Card>
+            <Card>右边栏 card</Card>
+            <Card>右边栏 card</Card>
           </slot>
-          <Ifooter />
         </Sider>
-        <Content>
+        <Content class="main-content">
           <slot name="body"></slot>
         </Content>
       </Layout>
@@ -20,7 +21,6 @@
 </template>
 
 <script>
-  import { Layout, Header, Sider, Content, Card } from 'iview'
   import Iheader from './Header'
   import Ifooter from './Footer'
 
@@ -32,19 +32,31 @@
       }
     },
     components: {
-      Layout,
-      Header,
-      Sider,
-      Content,
       Iheader,
       Ifooter,
-      Card,
     }
   }
 </script>
 
-<style>
+<style lang="scss">
+.ivu-layout-header {
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(26,26,26,.1);
+}
 .ivu-layout-sider {
   order: 1;
+}
+.layout-container {
+  width: 1000px;
+  margin: 79px auto auto;
+}
+.main-content {
+  margin-right: 15px;
+  background: burlywood;
+}
+.layout-sider {
+  background: transparent;
 }
 </style>
