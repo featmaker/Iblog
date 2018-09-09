@@ -27,12 +27,14 @@
                 </menu-item>
             </div>
         </Menu>
+        <Serach></Serach>
       </header>
     </div>
   </div>
 </template>
 
 <script>
+  import Serach from './Search'
 
   export default {
     data() {
@@ -41,7 +43,7 @@
       }
     },
     components: {
-     
+     Serach,
     }
   }
 </script>
