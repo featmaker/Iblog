@@ -13,6 +13,7 @@ a {
   margin-bottom: 15px;
 }
 
+/* 文本对齐 */
 .text-left {
   text-align: left
 }
@@ -25,6 +26,7 @@ a {
   text-align: right
 }
 
+/* 定位相关 */
 .relative {
   position: relative;
 }
@@ -35,4 +37,61 @@ a {
 
 .float-right {
   float: right;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/* flex 布局 */
+.flex {
+  display: flex;
+}
+
+.flex-j-c {
+  justify-content: center;
+}
+
+.flex-a-c {
+  align-items: center;
+}
+
+/* 宽高百分百 */
+.width-p-100 {
+  width: 100%;
+}
+.height-p-100 {
+  height: 100%;
+}
+
+/* 间距 */
+.m-t-15 {
+  margin-top: 15px;
+}
+
+.m-b-15 {
+  margin-bottom: 15px;
+}
+
+/* 颜色相关 */
+.bg-fff {
+  background-color: #fff;
+}
+
+/* 字号相关 */
+.f-s-13 {
+  font-size: 13px;
+}
+.f-s-14 {
+  font-size: 14px;
+}
+.f-s-15 {
+  font-size: 15px;
+}
+.f-s-16 {
+  font-size: 16px;
 }
